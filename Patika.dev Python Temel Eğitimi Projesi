@@ -1,0 +1,20 @@
+PROJE 1
+def flatten(l):
+    flat = []
+    for i in l:
+        if isinstance(i, list) or isinstance(i, tuple):
+            flat.extend(flatten(i))
+        else:
+            flat.append(i)
+    return flat
+    
+PROJE 2
+    
+    
+    def revrs(l):
+    l.reverse()
+    for i in l:
+        if isinstance(i, list) or isinstance(i, tuple):
+            i.reverse()
+    return l
+    
